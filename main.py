@@ -29,7 +29,7 @@ def load_resources():
 @st.cache_resource
 def load_model_components():
     try:
-        with open('model.pkl', 'rb') as model_file:
+        with open('modelSentiment.pkl', 'rb') as model_file:
             model = pickle.load(model_file)
         with open('vectorizer.pkl', 'rb') as vectorizer_file:
             vectorizer = pickle.load(vectorizer_file)
